@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="addHFO" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="addMGO" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="berthOfActivity" optional="YES" attributeType="String"/>
+        <attribute name="boilerConsuptionPerDay" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="cargoMoved" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="eventID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fixedHFO" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="fixedMGO" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isBoilerHFO" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isBoilerOne" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isBolierThree" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isBolierTwo" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isDDGG_Hfo" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isDDGG_One" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isDDGG_Three" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isDDGG_Two" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isKindOf" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isMaineEngine" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isMeHFO" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vslLaddenPercentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="locationAndEvents" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocationAndEvents" inverseName="activity" inverseEntity="LocationAndEvents"/>
+    </entity>
+    <entity name="Berth" representedClassName="Berth" syncable="YES">
+        <attribute name="berthID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="berthName" optional="YES" attributeType="String"/>
+        <relationship name="berthDetails" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BerthDetail" inverseName="berth" inverseEntity="BerthDetail"/>
+        <relationship name="locAndEvents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LocationAndEvents" inverseName="berths" inverseEntity="LocationAndEvents"/>
+        <relationship name="port" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ports" inverseName="berth" inverseEntity="Ports"/>
+    </entity>
+    <entity name="BerthDetail" representedClassName="BerthDetail" syncable="YES">
+        <attribute name="bunker" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="draft" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="freshWater" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="garbage" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="latitudeDelta" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitudeDelta" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="map" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mapScreenshot" optional="YES" attributeType="Binary"/>
+        <attribute name="maxDraft" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mooringSide" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="note" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="notetxt" optional="YES" attributeType="String"/>
+        <attribute name="now" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sludge" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="stores" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tugsForMooring" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tugsForMooringNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tugsForUnmooring" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tugsForUnmooringNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="berth" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Berth" inverseName="berthDetails" inverseEntity="Berth"/>
+        <relationship name="cargoesForBerths" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CargoesForBerth" inverseName="berthDetails" inverseEntity="CargoesForBerth"/>
+    </entity>
+    <entity name="BunkerVslDetails" representedClassName="BunkerVslDetails" syncable="YES">
+        <attribute name="boilerConsuptionMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="boilerConsuptionMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="ddggConsuption" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="eightyBallast" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="eightyLadden" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="eightySpeed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="forthyBallast" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="forthyLadden" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="forthySpeed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="fullBallast" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="fullLadden" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="fullSpeed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="hfoCapacity" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="mgoCapacity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="now" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sixtyBallast" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="sixtyLadden" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="sixtySpeed" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CargoesForBerth" representedClassName="CargoesForBerth" syncable="YES">
+        <attribute name="analyses" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="analysesTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="cargoName" optional="YES" attributeType="String"/>
+        <attribute name="cargoNote" optional="YES" attributeType="String"/>
+        <attribute name="connectionArrangement" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="connectionSize" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pumpingRate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="tankInspection" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wallWash" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="berthDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BerthDetail" inverseName="cargoesForBerths" inverseEntity="BerthDetail"/>
+    </entity>
+    <entity name="Distances" representedClassName="Distances" syncable="YES">
+        <attribute name="distances" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="idDistances" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="pilotStationComposit" optional="YES" attributeType="String"/>
+        <attribute name="voyNotes" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="LocationAndEvents" representedClassName="LocationAndEvents" syncable="YES">
+        <attribute name="berth" optional="YES" attributeType="String"/>
+        <attribute name="locationID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pltStn" optional="YES" attributeType="String"/>
+        <attribute name="port" optional="YES" attributeType="String"/>
+        <attribute name="timeZoneForLocation" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="activity" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Activity" inverseName="locationAndEvents" inverseEntity="Activity"/>
+        <relationship name="berths" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Berth" inverseName="locAndEvents" inverseEntity="Berth"/>
+    </entity>
+    <entity name="PilotStations" representedClassName="PilotStations" syncable="YES">
+        <attribute name="idPLT" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="pltName" optional="YES" attributeType="String"/>
+        <relationship name="ports" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ports" inverseName="pilotStations" inverseEntity="Ports"/>
+    </entity>
+    <entity name="Ports" representedClassName="Ports" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="portName" optional="YES" attributeType="String"/>
+        <relationship name="berth" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Berth" inverseName="port" inverseEntity="Berth"/>
+        <relationship name="pilotStations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PilotStations" inverseName="ports" inverseEntity="PilotStations"/>
+    </entity>
+    <entity name="SettingsData" representedClassName="SettingsData" syncable="YES">
+        <attribute name="now" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="vslBeam" optional="YES" attributeType="String"/>
+        <attribute name="vslEmail" optional="YES" attributeType="String"/>
+        <attribute name="vslLength" optional="YES" attributeType="String"/>
+        <attribute name="vslName" optional="YES" attributeType="String"/>
+        <attribute name="vslType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="VesselInitialSettings" representedClassName="VesselInitialSettings" syncable="YES">
+        <attribute name="initialDate" optional="YES" attributeType="String"/>
+        <attribute name="initialHFO" optional="YES" attributeType="String"/>
+        <attribute name="initialMGO" optional="YES" attributeType="String"/>
+        <attribute name="now" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timeZoneFromSetting" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="184.44140625" positionY="36.76171875" width="128" height="403"/>
+        <element name="Berth" positionX="5.35546875" positionY="223.6953125" width="128" height="118"/>
+        <element name="BerthDetail" positionX="-257.34375" positionY="237.4140625" width="128" height="388"/>
+        <element name="BunkerVslDetails" positionX="-440.515625" positionY="442.89453125" width="128" height="313"/>
+        <element name="CargoesForBerth" positionX="-433.83984375" positionY="295.91796875" width="128" height="193"/>
+        <element name="Distances" positionX="-234" positionY="189" width="128" height="103"/>
+        <element name="LocationAndEvents" positionX="-51.5625" positionY="402.48046875" width="128" height="148"/>
+        <element name="PilotStations" positionX="-238.90625" positionY="122.4765625" width="128" height="88"/>
+        <element name="Ports" positionX="-36" positionY="36" width="128" height="103"/>
+        <element name="SettingsData" positionX="-234" positionY="189" width="128" height="133"/>
+        <element name="VesselInitialSettings" positionX="-442.4765625" positionY="186.02734375" width="128" height="118"/>
+    </elements>
+</model>

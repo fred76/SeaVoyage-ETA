@@ -7,15 +7,124 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66087FBC2445AAE30019C6F4 /* wrappedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66087FBB2445AAE30019C6F4 /* wrappedTextView.swift */; };
+		661026FB243F9BE800693643 /* WrappedGeneralChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661026FA243F9BE800693643 /* WrappedGeneralChart.swift */; };
+		661026FD243F9CAC00693643 /* Ext DM MapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661026FC243F9CAC00693643 /* Ext DM MapKit.swift */; };
+		661026FF243FA4C200693643 /* BerthDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661026FE243FA4C200693643 /* BerthDetailList.swift */; };
+		66102701243FA79900693643 /* BerthDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66102700243FA79900693643 /* BerthDetailSheet.swift */; };
+		662BE1CF2448E4E400DD8146 /* WrappedMapWithCenterPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662BE1CE2448E4E400DD8146 /* WrappedMapWithCenterPoint.swift */; };
+		662BE1D1244CA47200DD8146 /* CargoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662BE1D0244CA47200DD8146 /* CargoView.swift */; };
+		662BE1D7244FA02C00DD8146 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662BE1D6244FA02C00DD8146 /* CloudKit.framework */; };
+		662CFC15243B7B9B00BF539A /* EnumFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC14243B7B9B00BF539A /* EnumFile.swift */; };
+		662CFC17243B7BBB00BF539A /* StaticClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC16243B7BBB00BF539A /* StaticClass.swift */; };
+		662CFC19243B7D5D00BF539A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC18243B7D5D00BF539A /* Extension.swift */; };
+		662CFC2D243B85B500BF539A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC23243B85B500BF539A /* Model.xcdatamodeld */; };
+		662CFC6B243B868600BF539A /* Distances+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC57243B868600BF539A /* Distances+CoreDataClass.swift */; };
+		662CFC6C243B868700BF539A /* Distances+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC58243B868600BF539A /* Distances+CoreDataProperties.swift */; };
+		662CFC6D243B868700BF539A /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC59243B868600BF539A /* Activity+CoreDataClass.swift */; };
+		662CFC6E243B868700BF539A /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC5A243B868600BF539A /* Activity+CoreDataProperties.swift */; };
+		662CFC6F243B868700BF539A /* CargoesForBerth+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC5B243B868600BF539A /* CargoesForBerth+CoreDataClass.swift */; };
+		662CFC70243B868700BF539A /* CargoesForBerth+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC5C243B868600BF539A /* CargoesForBerth+CoreDataProperties.swift */; };
+		662CFC71243B868700BF539A /* Berth+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC5D243B868600BF539A /* Berth+CoreDataClass.swift */; };
+		662CFC72243B868700BF539A /* Berth+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC5E243B868600BF539A /* Berth+CoreDataProperties.swift */; };
+		662CFC73243B868700BF539A /* PilotStations+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC5F243B868600BF539A /* PilotStations+CoreDataClass.swift */; };
+		662CFC74243B868700BF539A /* PilotStations+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC60243B868600BF539A /* PilotStations+CoreDataProperties.swift */; };
+		662CFC75243B868700BF539A /* LocationAndEvents+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC61243B868600BF539A /* LocationAndEvents+CoreDataClass.swift */; };
+		662CFC76243B868700BF539A /* LocationAndEvents+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC62243B868600BF539A /* LocationAndEvents+CoreDataProperties.swift */; };
+		662CFC77243B868700BF539A /* Ports+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC63243B868600BF539A /* Ports+CoreDataClass.swift */; };
+		662CFC78243B868700BF539A /* Ports+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC64243B868600BF539A /* Ports+CoreDataProperties.swift */; };
+		662CFC79243B868700BF539A /* VesselInitialSettings+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC65243B868600BF539A /* VesselInitialSettings+CoreDataClass.swift */; };
+		662CFC7A243B868700BF539A /* VesselInitialSettings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC66243B868600BF539A /* VesselInitialSettings+CoreDataProperties.swift */; };
+		662CFC7B243B868700BF539A /* BunkerVslDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC67243B868600BF539A /* BunkerVslDetails+CoreDataClass.swift */; };
+		662CFC7C243B868700BF539A /* BunkerVslDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC68243B868600BF539A /* BunkerVslDetails+CoreDataProperties.swift */; };
+		662CFC7D243B868700BF539A /* BerthDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC69243B868600BF539A /* BerthDetail+CoreDataClass.swift */; };
+		662CFC7E243B868700BF539A /* BerthDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC6A243B868600BF539A /* BerthDetail+CoreDataProperties.swift */; };
+		662CFC80243B877200BF539A /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC7F243B877200BF539A /* CoreData.swift */; };
+		662CFC82243B87C600BF539A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC81243B87C600BF539A /* DataManager.swift */; };
+		662CFC84243B87FA00BF539A /* ActivityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC83243B87FA00BF539A /* ActivityClass.swift */; };
+		662CFC89243CA40500BF539A /* ActivitySheetSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC88243CA40500BF539A /* ActivitySheetSetup.swift */; };
+		662CFC8B243CA5E600BF539A /* Ext DM_BunkerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC8A243CA5E600BF539A /* Ext DM_BunkerDetail.swift */; };
+		662CFC8D243CA69100BF539A /* BindBoolMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC8C243CA69100BF539A /* BindBoolMarker.swift */; };
+		662CFC8F243CAF0500BF539A /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFC8E243CAF0500BF539A /* CustomUI.swift */; };
+		662CFCA3243DA2BB00BF539A /* BunkerSetupForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFCA2243DA2BB00BF539A /* BunkerSetupForm.swift */; };
+		662CFCA5243DE02700BF539A /* ResultForETAandBunker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFCA4243DE02700BF539A /* ResultForETAandBunker.swift */; };
+		662CFCA7243E081C00BF539A /* ExtensionDM_VSL_InitilaSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFCA6243E081C00BF539A /* ExtensionDM_VSL_InitilaSettings.swift */; };
+		662CFCA9243E13F600BF539A /* UI Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFCA8243E13F600BF539A /* UI Helper.swift */; };
+		662CFCAB243E148D00BF539A /* Ext DM Time Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFCAA243E148D00BF539A /* Ext DM Time Calc.swift */; };
+		662CFCAD243E153800BF539A /* Ext DM Bunker Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFCAC243E153800BF539A /* Ext DM Bunker Calc.swift */; };
+		662CFCAF243E168500BF539A /* Ext DM Location & Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFCAE243E168500BF539A /* Ext DM Location & Activities.swift */; };
+		662CFCB1243E187100BF539A /* Ext DM Berth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CFCB0243E187100BF539A /* Ext DM Berth.swift */; };
+		66A6D6752450E58D001F9948 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6D6742450E58D001F9948 /* SettingsView.swift */; };
+		66A6D6792451EC78001F9948 /* SettingsData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6D6772451EC78001F9948 /* SettingsData+CoreDataClass.swift */; };
+		66A6D67A2451EC78001F9948 /* SettingsData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6D6782451EC78001F9948 /* SettingsData+CoreDataProperties.swift */; };
+		66A6D67C2451ED43001F9948 /* SimplePDFCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6D67B2451ED43001F9948 /* SimplePDFCommand.swift */; };
+		66C89D96245389250063400A /* WrappedActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C89D95245389250063400A /* WrappedActivityViewController.swift */; };
+		66C89D992454012F0063400A /* WrappedMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C89D982454012F0063400A /* WrappedMailView.swift */; };
 		66F0AFF2243B0042003419C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0AFF1243B0042003419C1 /* AppDelegate.swift */; };
 		66F0AFF4243B0042003419C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0AFF3243B0042003419C1 /* SceneDelegate.swift */; };
 		66F0AFF6243B0042003419C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0AFF5243B0042003419C1 /* ContentView.swift */; };
 		66F0AFF8243B0045003419C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F0AFF7243B0045003419C1 /* Assets.xcassets */; };
 		66F0AFFB243B0045003419C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F0AFFA243B0045003419C1 /* Preview Assets.xcassets */; };
 		66F0AFFE243B0045003419C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F0AFFC243B0045003419C1 /* LaunchScreen.storyboard */; };
+		66F0B006243B006F003419C1 /* PilotstationPortBerthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0B005243B006F003419C1 /* PilotstationPortBerthView.swift */; };
+		66F0B009243B608D003419C1 /* WrappedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0B008243B608D003419C1 /* WrappedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66087FBB2445AAE30019C6F4 /* wrappedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wrappedTextView.swift; sourceTree = "<group>"; };
+		661026FA243F9BE800693643 /* WrappedGeneralChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrappedGeneralChart.swift; sourceTree = "<group>"; };
+		661026FC243F9CAC00693643 /* Ext DM MapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext DM MapKit.swift"; sourceTree = "<group>"; };
+		661026FE243FA4C200693643 /* BerthDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerthDetailList.swift; sourceTree = "<group>"; };
+		66102700243FA79900693643 /* BerthDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerthDetailSheet.swift; sourceTree = "<group>"; };
+		662BE1CE2448E4E400DD8146 /* WrappedMapWithCenterPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedMapWithCenterPoint.swift; sourceTree = "<group>"; };
+		662BE1D0244CA47200DD8146 /* CargoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoView.swift; sourceTree = "<group>"; };
+		662BE1D4244F9FF900DD8146 /* SeaVoyage&ETA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SeaVoyage&ETA.entitlements"; sourceTree = "<group>"; };
+		662BE1D6244FA02C00DD8146 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		662CFC14243B7B9B00BF539A /* EnumFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumFile.swift; sourceTree = "<group>"; };
+		662CFC16243B7BBB00BF539A /* StaticClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticClass.swift; sourceTree = "<group>"; };
+		662CFC18243B7D5D00BF539A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		662CFC24243B85B500BF539A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		662CFC57243B868600BF539A /* Distances+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Distances+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC58243B868600BF539A /* Distances+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Distances+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC59243B868600BF539A /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC5A243B868600BF539A /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC5B243B868600BF539A /* CargoesForBerth+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CargoesForBerth+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC5C243B868600BF539A /* CargoesForBerth+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CargoesForBerth+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC5D243B868600BF539A /* Berth+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Berth+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC5E243B868600BF539A /* Berth+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Berth+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC5F243B868600BF539A /* PilotStations+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotStations+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC60243B868600BF539A /* PilotStations+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilotStations+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC61243B868600BF539A /* LocationAndEvents+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationAndEvents+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC62243B868600BF539A /* LocationAndEvents+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationAndEvents+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC63243B868600BF539A /* Ports+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ports+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC64243B868600BF539A /* Ports+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ports+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC65243B868600BF539A /* VesselInitialSettings+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VesselInitialSettings+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC66243B868600BF539A /* VesselInitialSettings+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VesselInitialSettings+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC67243B868600BF539A /* BunkerVslDetails+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BunkerVslDetails+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC68243B868600BF539A /* BunkerVslDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BunkerVslDetails+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC69243B868600BF539A /* BerthDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BerthDetail+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC6A243B868600BF539A /* BerthDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BerthDetail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		662CFC7F243B877200BF539A /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		662CFC81243B87C600BF539A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		662CFC83243B87FA00BF539A /* ActivityClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityClass.swift; sourceTree = "<group>"; };
+		662CFC88243CA40500BF539A /* ActivitySheetSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySheetSetup.swift; sourceTree = "<group>"; };
+		662CFC8A243CA5E600BF539A /* Ext DM_BunkerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext DM_BunkerDetail.swift"; sourceTree = "<group>"; };
+		662CFC8C243CA69100BF539A /* BindBoolMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindBoolMarker.swift; sourceTree = "<group>"; };
+		662CFC8E243CAF0500BF539A /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
+		662CFCA2243DA2BB00BF539A /* BunkerSetupForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BunkerSetupForm.swift; sourceTree = "<group>"; };
+		662CFCA4243DE02700BF539A /* ResultForETAandBunker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultForETAandBunker.swift; sourceTree = "<group>"; };
+		662CFCA6243E081C00BF539A /* ExtensionDM_VSL_InitilaSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDM_VSL_InitilaSettings.swift; sourceTree = "<group>"; };
+		662CFCA8243E13F600BF539A /* UI Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI Helper.swift"; sourceTree = "<group>"; };
+		662CFCAA243E148D00BF539A /* Ext DM Time Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext DM Time Calc.swift"; sourceTree = "<group>"; };
+		662CFCAC243E153800BF539A /* Ext DM Bunker Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext DM Bunker Calc.swift"; sourceTree = "<group>"; };
+		662CFCAE243E168500BF539A /* Ext DM Location & Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext DM Location & Activities.swift"; sourceTree = "<group>"; };
+		662CFCB0243E187100BF539A /* Ext DM Berth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext DM Berth.swift"; sourceTree = "<group>"; };
+		66A6D6742450E58D001F9948 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		66A6D6772451EC78001F9948 /* SettingsData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		66A6D6782451EC78001F9948 /* SettingsData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		66A6D67B2451ED43001F9948 /* SimplePDFCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePDFCommand.swift; sourceTree = "<group>"; };
+		66C89D95245389250063400A /* WrappedActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedActivityViewController.swift; sourceTree = "<group>"; };
+		66C89D982454012F0063400A /* WrappedMailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedMailView.swift; sourceTree = "<group>"; };
 		66F0AFEE243B0042003419C1 /* SeaVoyage&ETA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeaVoyage&ETA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F0AFF1243B0042003419C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F0AFF3243B0042003419C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +133,8 @@
 		66F0AFFA243B0045003419C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66F0AFFD243B0045003419C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66F0AFFF243B0045003419C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F0B005243B006F003419C1 /* PilotstationPortBerthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotstationPortBerthView.swift; sourceTree = "<group>"; };
+		66F0B008243B608D003419C1 /* WrappedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +142,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662BE1D7244FA02C00DD8146 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		662BE1D5244FA02C00DD8146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				662BE1D6244FA02C00DD8146 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		662CFC1A243B85B500BF539A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				66A6D6772451EC78001F9948 /* SettingsData+CoreDataClass.swift */,
+				66A6D6782451EC78001F9948 /* SettingsData+CoreDataProperties.swift */,
+				662CFC57243B868600BF539A /* Distances+CoreDataClass.swift */,
+				662CFC59243B868600BF539A /* Activity+CoreDataClass.swift */,
+				662CFC5B243B868600BF539A /* CargoesForBerth+CoreDataClass.swift */,
+				662CFC5D243B868600BF539A /* Berth+CoreDataClass.swift */,
+				662CFC5F243B868600BF539A /* PilotStations+CoreDataClass.swift */,
+				662CFC61243B868600BF539A /* LocationAndEvents+CoreDataClass.swift */,
+				662CFC63243B868600BF539A /* Ports+CoreDataClass.swift */,
+				662CFC65243B868600BF539A /* VesselInitialSettings+CoreDataClass.swift */,
+				662CFC67243B868600BF539A /* BunkerVslDetails+CoreDataClass.swift */,
+				662CFC69243B868600BF539A /* BerthDetail+CoreDataClass.swift */,
+				662CFC58243B868600BF539A /* Distances+CoreDataProperties.swift */,
+				662CFC5A243B868600BF539A /* Activity+CoreDataProperties.swift */,
+				662CFC5C243B868600BF539A /* CargoesForBerth+CoreDataProperties.swift */,
+				662CFC5E243B868600BF539A /* Berth+CoreDataProperties.swift */,
+				662CFC60243B868600BF539A /* PilotStations+CoreDataProperties.swift */,
+				662CFC62243B868600BF539A /* LocationAndEvents+CoreDataProperties.swift */,
+				662CFC64243B868600BF539A /* Ports+CoreDataProperties.swift */,
+				662CFC66243B868600BF539A /* VesselInitialSettings+CoreDataProperties.swift */,
+				662CFC68243B868600BF539A /* BunkerVslDetails+CoreDataProperties.swift */,
+				662CFC6A243B868600BF539A /* BerthDetail+CoreDataProperties.swift */,
+				662CFC23243B85B500BF539A /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		662CFCA0243DA10100BF539A /* Wrapped Class */ = {
+			isa = PBXGroup;
+			children = (
+				661026FA243F9BE800693643 /* WrappedGeneralChart.swift */,
+				662BE1CE2448E4E400DD8146 /* WrappedMapWithCenterPoint.swift */,
+				66F0B008243B608D003419C1 /* WrappedTextField.swift */,
+				66087FBB2445AAE30019C6F4 /* wrappedTextView.swift */,
+				66C89D95245389250063400A /* WrappedActivityViewController.swift */,
+				66C89D982454012F0063400A /* WrappedMailView.swift */,
+			);
+			path = "Wrapped Class";
+			sourceTree = "<group>";
+		};
+		662CFCA1243DA14A00BF539A /* Extended Class */ = {
+			isa = PBXGroup;
+			children = (
+				662CFC8E243CAF0500BF539A /* CustomUI.swift */,
+				662CFCA8243E13F600BF539A /* UI Helper.swift */,
+				662CFC18243B7D5D00BF539A /* Extension.swift */,
+				66A6D67B2451ED43001F9948 /* SimplePDFCommand.swift */,
+			);
+			path = "Extended Class";
+			sourceTree = "<group>";
+		};
 		66F0AFE5243B0042003419C1 = {
 			isa = PBXGroup;
 			children = (
 				66F0AFF0243B0042003419C1 /* SeaVoyage&ETA */,
 				66F0AFEF243B0042003419C1 /* Products */,
+				662BE1D5244FA02C00DD8146 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +231,23 @@
 		66F0AFF0243B0042003419C1 /* SeaVoyage&ETA */ = {
 			isa = PBXGroup;
 			children = (
+				662BE1D4244F9FF900DD8146 /* SeaVoyage&ETA.entitlements */,
 				66F0AFF1243B0042003419C1 /* AppDelegate.swift */,
 				66F0AFF3243B0042003419C1 /* SceneDelegate.swift */,
-				66F0AFF5243B0042003419C1 /* ContentView.swift */,
+				662CFC7F243B877200BF539A /* CoreData.swift */,
+				662CFC81243B87C600BF539A /* DataManager.swift */,
+				662CFC8A243CA5E600BF539A /* Ext DM_BunkerDetail.swift */,
+				662CFCA6243E081C00BF539A /* ExtensionDM_VSL_InitilaSettings.swift */,
+				662CFCAA243E148D00BF539A /* Ext DM Time Calc.swift */,
+				662CFCAC243E153800BF539A /* Ext DM Bunker Calc.swift */,
+				662CFCAE243E168500BF539A /* Ext DM Location & Activities.swift */,
+				662CFCB0243E187100BF539A /* Ext DM Berth.swift */,
+				661026FC243F9CAC00693643 /* Ext DM MapKit.swift */,
+				662CFC1A243B85B500BF539A /* CoreData */,
+				66F0B007243B604E003419C1 /* MainViews */,
+				662CFCA1243DA14A00BF539A /* Extended Class */,
+				662CFCA0243DA10100BF539A /* Wrapped Class */,
+				66F0B00A243B6096003419C1 /* ComputedProperties */,
 				66F0AFF7243B0045003419C1 /* Assets.xcassets */,
 				66F0AFFC243B0045003419C1 /* LaunchScreen.storyboard */,
 				66F0AFFF243B0045003419C1 /* Info.plist */,
@@ -73,6 +262,33 @@
 				66F0AFFA243B0045003419C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66F0B007243B604E003419C1 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				66F0AFF5243B0042003419C1 /* ContentView.swift */,
+				66F0B005243B006F003419C1 /* PilotstationPortBerthView.swift */,
+				662CFC88243CA40500BF539A /* ActivitySheetSetup.swift */,
+				662CFCA4243DE02700BF539A /* ResultForETAandBunker.swift */,
+				661026FE243FA4C200693643 /* BerthDetailList.swift */,
+				66102700243FA79900693643 /* BerthDetailSheet.swift */,
+				662BE1D0244CA47200DD8146 /* CargoView.swift */,
+				662CFCA2243DA2BB00BF539A /* BunkerSetupForm.swift */,
+				66A6D6742450E58D001F9948 /* SettingsView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		66F0B00A243B6096003419C1 /* ComputedProperties */ = {
+			isa = PBXGroup;
+			children = (
+				662CFC83243B87FA00BF539A /* ActivityClass.swift */,
+				662CFC8C243CA69100BF539A /* BindBoolMarker.swift */,
+				662CFC14243B7B9B00BF539A /* EnumFile.swift */,
+				662CFC16243B7BBB00BF539A /* StaticClass.swift */,
+			);
+			path = ComputedProperties;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +362,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662CFC6F243B868700BF539A /* CargoesForBerth+CoreDataClass.swift in Sources */,
+				662CFCAF243E168500BF539A /* Ext DM Location & Activities.swift in Sources */,
 				66F0AFF2243B0042003419C1 /* AppDelegate.swift in Sources */,
+				66F0B006243B006F003419C1 /* PilotstationPortBerthView.swift in Sources */,
+				661026FD243F9CAC00693643 /* Ext DM MapKit.swift in Sources */,
+				66C89D96245389250063400A /* WrappedActivityViewController.swift in Sources */,
+				662CFC74243B868700BF539A /* PilotStations+CoreDataProperties.swift in Sources */,
+				662CFC80243B877200BF539A /* CoreData.swift in Sources */,
+				662CFCAD243E153800BF539A /* Ext DM Bunker Calc.swift in Sources */,
+				662CFC78243B868700BF539A /* Ports+CoreDataProperties.swift in Sources */,
+				662CFC7B243B868700BF539A /* BunkerVslDetails+CoreDataClass.swift in Sources */,
+				662CFC6C243B868700BF539A /* Distances+CoreDataProperties.swift in Sources */,
+				662CFCA9243E13F600BF539A /* UI Helper.swift in Sources */,
+				662CFC7C243B868700BF539A /* BunkerVslDetails+CoreDataProperties.swift in Sources */,
+				66A6D6792451EC78001F9948 /* SettingsData+CoreDataClass.swift in Sources */,
+				66A6D67A2451EC78001F9948 /* SettingsData+CoreDataProperties.swift in Sources */,
+				662CFC6E243B868700BF539A /* Activity+CoreDataProperties.swift in Sources */,
+				662CFC8F243CAF0500BF539A /* CustomUI.swift in Sources */,
+				662CFC73243B868700BF539A /* PilotStations+CoreDataClass.swift in Sources */,
+				66C89D992454012F0063400A /* WrappedMailView.swift in Sources */,
+				662CFC89243CA40500BF539A /* ActivitySheetSetup.swift in Sources */,
+				66F0B009243B608D003419C1 /* WrappedTextField.swift in Sources */,
+				662CFC6D243B868700BF539A /* Activity+CoreDataClass.swift in Sources */,
 				66F0AFF4243B0042003419C1 /* SceneDelegate.swift in Sources */,
+				662CFC77243B868700BF539A /* Ports+CoreDataClass.swift in Sources */,
+				662CFC8D243CA69100BF539A /* BindBoolMarker.swift in Sources */,
+				662CFC17243B7BBB00BF539A /* StaticClass.swift in Sources */,
+				66087FBC2445AAE30019C6F4 /* wrappedTextView.swift in Sources */,
+				662CFC7A243B868700BF539A /* VesselInitialSettings+CoreDataProperties.swift in Sources */,
+				66A6D6752450E58D001F9948 /* SettingsView.swift in Sources */,
+				662CFC84243B87FA00BF539A /* ActivityClass.swift in Sources */,
+				662CFC82243B87C600BF539A /* DataManager.swift in Sources */,
+				662CFC2D243B85B500BF539A /* Model.xcdatamodeld in Sources */,
+				662CFC15243B7B9B00BF539A /* EnumFile.swift in Sources */,
+				662CFC7D243B868700BF539A /* BerthDetail+CoreDataClass.swift in Sources */,
+				662CFC75243B868700BF539A /* LocationAndEvents+CoreDataClass.swift in Sources */,
+				662CFC70243B868700BF539A /* CargoesForBerth+CoreDataProperties.swift in Sources */,
+				662BE1D1244CA47200DD8146 /* CargoView.swift in Sources */,
 				66F0AFF6243B0042003419C1 /* ContentView.swift in Sources */,
+				662CFC71243B868700BF539A /* Berth+CoreDataClass.swift in Sources */,
+				662CFCAB243E148D00BF539A /* Ext DM Time Calc.swift in Sources */,
+				66102701243FA79900693643 /* BerthDetailSheet.swift in Sources */,
+				662CFC8B243CA5E600BF539A /* Ext DM_BunkerDetail.swift in Sources */,
+				662CFC6B243B868600BF539A /* Distances+CoreDataClass.swift in Sources */,
+				662BE1CF2448E4E400DD8146 /* WrappedMapWithCenterPoint.swift in Sources */,
+				662CFC72243B868700BF539A /* Berth+CoreDataProperties.swift in Sources */,
+				661026FF243FA4C200693643 /* BerthDetailList.swift in Sources */,
+				662CFC79243B868700BF539A /* VesselInitialSettings+CoreDataClass.swift in Sources */,
+				662CFCA7243E081C00BF539A /* ExtensionDM_VSL_InitilaSettings.swift in Sources */,
+				66A6D67C2451ED43001F9948 /* SimplePDFCommand.swift in Sources */,
+				662CFC19243B7D5D00BF539A /* Extension.swift in Sources */,
+				662CFCA5243DE02700BF539A /* ResultForETAandBunker.swift in Sources */,
+				662CFCB1243E187100BF539A /* Ext DM Berth.swift in Sources */,
+				661026FB243F9BE800693643 /* WrappedGeneralChart.swift in Sources */,
+				662CFC7E243B868700BF539A /* BerthDetail+CoreDataProperties.swift in Sources */,
+				662CFCA3243DA2BB00BF539A /* BunkerSetupForm.swift in Sources */,
+				662CFC76243B868700BF539A /* LocationAndEvents+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SeaVoyage&ETA/SeaVoyage&ETA.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SeaVoyage&ETA/Preview Content\"";
 				DEVELOPMENT_TEAM = L5EWQJU24M;
@@ -295,6 +566,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fred76.SeaVoyage-ETA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SeaVoyage&ETA/SeaVoyage&ETA.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SeaVoyage&ETA/Preview Content\"";
 				DEVELOPMENT_TEAM = L5EWQJU24M;
@@ -315,6 +588,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fred76.SeaVoyage-ETA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -342,6 +616,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		662CFC23243B85B500BF539A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				662CFC24243B85B500BF539A /* Model.xcdatamodel */,
+			);
+			currentVersion = 662CFC24243B85B500BF539A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 66F0AFE6243B0042003419C1 /* Project object */;
 }
