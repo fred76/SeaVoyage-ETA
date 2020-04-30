@@ -37,23 +37,23 @@ class CoreData: NSObject {
 		container.viewContext.automaticallyMergesChangesFromParent = false
 		try? container.viewContext.setQueryGenerationFrom(.current)
 		
-		do {
-			//				print("""
-			//pppp
-			//p
-			//
-			//
-			//
-			//p
-			//""")
-			//			   try container.initializeCloudKitSchema(options: [.printSchema])
-			//					   // Uncomment to do a dry run and print the CK records it'll make
-			try container.initializeCloudKitSchema(options: [.dryRun, .printSchema])
-			//					 // Uncomment to initialize your schema
-			//					 // try container.initializeCloudKitSchema()
-		} catch {
-			print("Unable to initialize CloudKit schema: \(error.localizedDescription)")
-		}
+// 		do {
+//							print("""
+//			pppp
+//			p
+//
+//
+//
+//			p
+//			""")
+//						   try container.initializeCloudKitSchema(options: [.printSchema])
+//								   // Uncomment to do a dry run and print the CK records it'll make
+//			try container.initializeCloudKitSchema(options: [.dryRun, .printSchema])
+//		 				 // Uncomment to initialize your schema
+// 					  try container.initializeCloudKitSchema()
+// 		} catch {
+// 			print("Unable to initialize CloudKit schema: \(error.localizedDescription)")
+// 	}
 		
 		return container
 	}()

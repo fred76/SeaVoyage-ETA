@@ -155,10 +155,10 @@ struct BunkerSetupForm: View {
 			} 
 				
 			.listStyle(GroupedListStyle())
-		}
-		.onTapGesture {
+		}.gesture(DragGesture().onChanged({ (_) in
 			DataManager.shared.dismissKeyboard()
-		}
+		}))
+		 
 		.KeyboardAwarePadding()
 		.onAppear {
 			DataManager.shared.activitiesClass = []

@@ -198,9 +198,9 @@ struct SettingsView: View {
 					}
 				}
 			}
-			.onTapGesture {
+			.gesture(DragGesture().onChanged({ (_) in
 				DataManager.shared.dismissKeyboard()
-			}
+			}))
 			.onAppear(perform: {
 				if self.settingsData.count > 0 {
 					if let s = self.settingsData.last {

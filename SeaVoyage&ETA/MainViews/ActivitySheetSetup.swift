@@ -131,9 +131,9 @@ struct ActivitySetupSheet: View {
 							   portSelected: self.$portSelected)
 			}
 		}
-		.onTapGesture {
+		.gesture(DragGesture().onChanged({ (_) in
 			DataManager.shared.dismissKeyboard()
-		}
+		}))
 		.onAppear {
 			self.isEditingMode()
 		}

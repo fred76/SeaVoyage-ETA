@@ -751,9 +751,9 @@ struct AddNewLocation: View {
 				UserInfoPltPortBerth(showUserInfoPltPortBerth: self.$showUserInfoPltPortBerth)
 			}
 		}
-		.onTapGesture {
+		.gesture(DragGesture().onChanged({ (_) in
 			DataManager.shared.dismissKeyboard()
-		}
+		}))
 		.background(Color(.systemGray2))
 		.transition(.move(edge: .top))
 	}
